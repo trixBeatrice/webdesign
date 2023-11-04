@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beatrice's Pet Shop</title>
+    <style>
+        /*reset default margins*/
+        #body {
+            margin: 0px;
+        }
+        
+        /*header style with background color and center-aligned text*/
+        #header {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /*header image style, setting width and height*/
+        #header img {
+            width: 80px;
+            height: 80px;
+        }
+        
+        /*header title style*/
+        #header h1 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        
+        /*top navigation style, center-aligned text and background color*/
+        .topnav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        
+        /*navigation link style*/
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        /*navigation link hover style*/
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        /*row style, containing two columns*/
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        /*second row style*/
+        .row2 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .row3 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+        
+        .row3 .column {
+            width: 30%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .row3 .column img {
+            width: 100%;
+            height: auto;
+        }
+
+        /*column style, each column occupies 30% width*/
+        .column {
+            width: 30%;
+        }
+        
+        /*title style, text centered*/
+        .column h2 {
+            text-align: center;
+        }
+        
+        /*paragraph style, text justified*/
+        .column p {
+            text-align: justify;
+        }
+        
+        /*set width of the first column to 25%*/
+        #column1 {
+            width: 25%;
+        }
+        
+        /*set text centered*/
+        #column2 {
+            text-align: center;
+        }
+        
+        /*center-align text in the second column p*/
+        #column2 p {
+            text-align: justify;
+        }
+        
+        /*background color <h2> for pet foods, our pets, and pet grooming*/
+        .column h2:nth-of-type(3n+1) {
+            background-color: blue;
+            padding: 5px;
+            color: #FFFFFF;
+        }
+        
+        /*background color <p> for pet foods, our pets, and pet grooming*/
+        .column p:nth-of-type(3n+1) { 
+            background-color: white;
+            padding: 5px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="image/dog_logo.jpg" alt="dog logo">
+            <h1>Beatrice's Pet Shop</h1>
+        </div>
+        <div class="topnav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Our Services</a>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h2>Home</h2>
+                <p>Welcome to Beatrice's Pet Shop, your ultimate pet destination. We offer a diverse range of services, including pet sales with a selection of healthy and happy pets, premium food, supplies, and accessories to meet your pet's needs, and expert grooming services. We also provide comfortable and secure boarding for your pets when you're away. We're more than just a pet shop; we're your partner in providing complete care for your pets. Whether you're looking to welcome a new pet into your family or ensure your current furry friends receive the best care, Beatrice's Pet Shop is here to serve you and your beloved pets with dedication and love.</p>
+            </div>
+            <div class="column" id="column1">
+                <h2>About Us</h2>
+                <p>At Beatrice's Pet Shop, we are more than just a pet store; we are your trusted partner in providing comprehensive pet care solutions. Our story begins with a deep passion for animals and a commitment to the well-being of pets and their owners. As pet enthusiasts ourselves, we take pride in offering a wide range of services designed to meet the diverse needs of both pets and their human companions. Our mission is to foster the bond between you and your pets, providing a place where all your pet-related needs are met with care and expertise.</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="column" id="column2">
+                <h2>Our Services</h2>
+                <p>Our services at Beatrice's Pet Shop are designed to ensure that your pets receive the best care possible. We offer a range of services, including pet sales, featuring a selection of healthy and well-cared-for pets, premium pet food, supplies, and accessories to ensure your furry friends have everything they need, and expert grooming services to keep your pets looking and feeling their best. We also provide comfortable and secure pet boarding for when you need to be away, offering a home away from home for your beloved pets. At Beatrice's Pet Shop, we are committed to providing all the services necessary to meet the diverse needs of pets and their owners, all with care and expertise.</p>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="column" id="column3">
+                <h2>Pet Foods</h2>
+                <img src="image/dog_cat_food.jpg" alt="Image 1">
+            </div>
+            <div class="column" id="column4">
+                <h2>Our Pets</h2>
+                <img src="image/dog_cat_img.jpg" alt="Image 2">
+            </div>
+            <div class="column" id="column5">
+                <h2>Pet Services</h2>
+                <img src="image/pet_grooming.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
